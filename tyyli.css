@@ -4,6 +4,16 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+/* Määrittele taustaväri body-elementille */
+body {
+    background-color: blue; /* Tässä voit vaihtaa taustavärin haluamaksesi */
+    font-family: Arial, sans-serif; /* Esimerkki fontista */
+}
+
+/* Muut tyylit jatkuvat tästä */
+
+
+
 /* Yläpalkin tyyli */
 header {
     background-color: aquamarine;
