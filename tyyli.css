@@ -52,3 +52,16 @@ footer {
     text-align: center;
     padding: 10px;
 }
+nav ul li a {
+    display: inline-block; /* Muutetaan linkin näyttämään laatikolta */
+    padding: 10px 20px; /* Lisätään sisätilaa laatikon sisään */
+    background-color: #337ab7; /* Taustaväri */
+    color: #fff; /* Tekstin väri */
+    text-decoration: none; /* Poistetaan linkkien korostus */
+    border-radius: 5px; /* Pyöristetään kulmat */
+    font-size: 18px; /* Suurennetaan tekstin kokoa */
+}
+
+nav ul li a:hover {
+    background-color: #23527c; /* Hover-tilan taustaväri */
+}
