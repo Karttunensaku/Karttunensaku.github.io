@@ -4,9 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Template</title>
+    <title>Tekoälytaituri.fi</title>
     <!-- Linkki CSS-tyylitiedostoon -->
     <link rel="stylesheet" href="tyyli.css">
+    <style>
+        /* Lisätään flexbox-asettelu pääsisällölle */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Tehdään pääsisällön korkeudeksi 100% näytön korkeudesta */
+        }
+
+        /* Lisätään flexbox-asettelu navigointipalkille */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +40,9 @@
         <h1>Tekoälytaituri</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Sivu 1</a></li>
-                <li><a href="sivu2.html">Sivu 2</a></li>
-                <li><a href="sivu3.html">Sivu 3</a></li>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="sivu2.html">Tietoa kurssista</a></li>
+                <li><a href="sivu3.html">Hinnasto</a></li>
             </ul>
         </nav>
     </header>
@@ -25,14 +50,14 @@
     <!-- Pääsisältö -->
     <main>
         <article>
-            <h2>Artikkelin otsikko</h2>
+            <h2>Tietoa meistä</h2>
             <p>Tämä on artikkelin sisältöä.</p>
         </article>
     </main>
 
     <!-- Alatunniste -->
     <footer>
-        <p>&copy; 2024 Yrityksen nimi</p>
+        <p>&copy; 2024 Tekoälytaituri, Yhteystiedot:</p>
     </footer>
 </body>
 

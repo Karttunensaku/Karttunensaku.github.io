@@ -4,31 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivu 3</title>
+    <title>Tekoälytaituri | Hinnasto</title>
+    <!-- Linkki CSS-tyylitiedostoon -->
     <link rel="stylesheet" href="tyyli.css">
+    <style>
+        /* Lisätään flexbox-asettelu pääsisällölle */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Tehdään pääsisällön korkeudeksi 100% näytön korkeudesta */
+        }
+
+        /* Lisätään flexbox-asettelu navigointipalkille */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Yläpalkki -->
     <header>
-        <h1>Sivu 3</h1>
+        <h1>Tekoälytaituri</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Sivu 1</a></li>
-                <li><a href="sivu2.html">Sivu 2</a></li>
-                <li><a href="sivu3.html">Sivu 3</a></li>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="sivu2.html">Tietoa kurssista</a></li>
+                <li><a href="sivu3.html">Hinnasto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Pääsisältö -->
     <main>
         <article>
-            <h2>Tervetuloa Sivulle 3</h2>
-            <p>Tämä on kolmas sivu.</p>
+            <h2>Hinnasto</h2>
+            <p>Tämä on artikkelin sisältöä.</p>
         </article>
     </main>
 
+    <!-- Alatunniste -->
     <footer>
-        <p>&copy; 2024 Yrityksen nimi</p>
+        <p>&copy; 2024 Tekoälytaituri</p>
     </footer>
 </body>
 
