@@ -1,3 +1,4 @@
+User
 /* Resetoidaan selaimen oletustyylit */
 body, h1, h2, p, ul, li {
     margin: 0;
@@ -15,7 +16,7 @@ body {
 header {
     background-color: #337ab7;
     color: #fff;
-    padding: 17px;
+    padding: 14px;
 }
 
 /* Yläpalkin linkkien tyyli */
@@ -71,12 +72,13 @@ img {
     max-width: 70%; /* Kuva skaalautuu maksimissaan elementin leveyden mukaan */
     height: auto;
     position: relative; /* Aseta kuvan sijainti suhteelliseksi */
-    margin-top: -400px; /* Lisätään marginaalia yläreunaan mobiililaitteilla */
+    margin-top: -350px; /* Lisätään marginaalia yläreunaan mobiililaitteilla */
+    margin-bottom: 20px; /* Lisää väliä kuvan ja ostonäppäimen välille */
 }
 
 button {
     background-color: cadetblue;
-    color: aliceblue;
+    color: #fff;
     padding: 20px 30px; /* Sisätilan määritys */
     border: none; /* Poista reuna */
     border-radius: 5px; /* Pyöristä reunat */
@@ -86,6 +88,10 @@ button {
     margin: 0 auto; /* Keskitä napin sijainti vaakasuunnassa */
     font-size: 16px; /* Tekstin koko */
     cursor: pointer; /* Osoitin muuttuu käsittelemiseksi */
+
+}/* Muutetaan osto-näppäimen tekstiväri valkoiseksi myös hover-tilassa */
+button:hover {
+    color: #fff;
 }
 
 
@@ -108,4 +114,24 @@ button {
 p, h1, h2, h3, h4, h5, h6 {
     margin-top: 20px; /* Määritä yhtenäinen ylämarginaali */
     margin-bottom: 20px; /* Määritä yhtenäinen alamarginaali */
+}
+/* Pääsisällön tyyli */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 600px; /* Asetetaan korkeus pääsisällölle */
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 23px; /* Muuta fonttikokoa tarvittaessa */
+}
+
+nav ul li a:hover {
+    background-color: #23527c;
 }
