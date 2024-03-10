@@ -6,28 +6,25 @@ body, h1, h2, p, ul, li {
 
 /* Määrittele taustaväri body-elementille */
 body {
-    background-color: #23527c; /* Tässä voit vaihtaa taustavärin haluamaksesi */
-    font-family: Arial, sans-serif; /* Esimerkki fontista */
+    background-color: #23527c;
+    font-family: Arial, sans-serif;
+    color: #fff;
 }
-
-/* Muut tyylit jatkuvat tästä */
-
-
 
 /* Yläpalkin tyyli */
 header {
     background-color: #337ab7;
     color: #fff;
-    padding: 10px;
+    padding: 17px;
 }
 
 /* Yläpalkin linkkien tyyli */
 nav ul {
     list-style: none;
+    display: flex; /* Lisätään flexbox-asettelu navigointipalkille */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -39,10 +36,12 @@ nav ul li a {
 /* Pääsisällön tyyli */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 article {
-    margin-bottom: 500px;
+    margin-bottom: 20px; /* Pienennetään marginaali mobiililaitteilla */
 }
 
 /* Alatunnisteen tyyli */
@@ -52,16 +51,61 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 nav ul li a {
-    display: inline-block; /* Muutetaan linkin näyttämään laatikolta */
-    padding: 10px 20px; /* Lisätään sisätilaa laatikon sisään */
-    background-color: #337ab7; /* Taustaväri */
-    color: #fff; /* Tekstin väri */
-    text-decoration: none; /* Poistetaan linkkien korostus */
-    border-radius: 5px; /* Pyöristetään kulmat */
-    font-size: 23px; /* Suurennetaan tekstin kokoa */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
-    background-color: #23527c; /* Hover-tilan taustaväri */
+    background-color: #23527c;
+}
+
+/* Kuvan koon muokkaus */
+img {
+    max-width: 70%; /* Kuva skaalautuu maksimissaan elementin leveyden mukaan */
+    height: auto;
+    position: relative; /* Aseta kuvan sijainti suhteelliseksi */
+    margin-top: -400px; /* Lisätään marginaalia yläreunaan mobiililaitteilla */
+}
+
+button {
+    background-color: cadetblue;
+    color: aliceblue;
+    padding: 20px 30px; /* Sisätilan määritys */
+    border: none; /* Poista reuna */
+    border-radius: 5px; /* Pyöristä reunat */
+    text-align: center; /* Tekstin keskitys */
+    text-decoration: none; /* Poista korostus */
+    display: block; /* Muuta näppäin lohko-elementiksi */
+    margin: 0 auto; /* Keskitä napin sijainti vaakasuunnassa */
+    font-size: 16px; /* Tekstin koko */
+    cursor: pointer; /* Osoitin muuttuu käsittelemiseksi */
+}
+
+
+/* Responsiivinen suunnittelu */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 10px; /* Pienennetään yläpalkin paddingia mobiililaitteilla */
+    }
+    nav ul li {
+        margin-right: 10px; /* Pienennetään linkkien marginaalia mobiililaitteilla */
+    }
+    img {
+        max-width: 90%; /* Pienennetään kuvan maksimileveyttä mobiililaitteilla */
+        margin-top: 10px; /* Pienennetään kuvan marginaalia yläreunaan mobiililaitteilla */
+    }
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px; /* Määritä yhtenäinen ylämarginaali */
+    margin-bottom: 20px; /* Määritä yhtenäinen alamarginaali */
 }
